@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+    .b{ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.5em;
+        left:100px;
+        top:100px;
+        position: relative;       
+        padding:20px;
+        width: 200px;
+        border: 0;
+        border-radius: 50px;    
+        background: linear-gradient(-45deg, #FFA63D, #FF3D77, #338AFF, #3CF0C5);        
+        background-size:600%;       
+        color:white;
+        transition-duration: 1s;  
+        filter:brightness(1);
+                     
+    }
+    .b span{opacity: 0;transition-duration: 0.5s;padding-left: 30px;}
+    .b:hover{
+        background-position-x: -1000px;
+        padding-left: 50px;
+    }
+    .b:hover div{
+        background-position-x: -1000px;
+    }
+    .b:hover span{opacity: 1;padding-left: 0px}
+    .b>div{ 
+        z-index: -1;
+        top:0;
+        left: 0;   
+        position:absolute;    
+        height: 58px;
+        width: 200px;
+        border: 0;
+        border-radius: 50px;    
+        background: linear-gradient(-45deg, #FFA63D, #FF3D77, #338AFF, #3CF0C5);        
+        background-size:600%;  /*DESPUES del linear gradient*/      
+        color:white;
+        transition-duration: 1s;  
+        filter:blur(20px);
+    }
+    </style>
+</head>
+<body>
+    
+   <div class="b">HOVER <span>»</span><div></div></div>       
+</body>
+</html>

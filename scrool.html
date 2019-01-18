@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>sddd</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        .contenedor{
+            width:400px;
+            height:200px;                        
+            border:2px solid red;
+            overflow: hidden;
+        }
+        .ssda{                              
+            display:grid;
+            grid-template-columns: repeat(3,400px);                        
+            transition-duration:1s;  
+        }
+        .ssda img{  
+            float: right;          
+            display:block;
+            width:400px;
+            height:200px;                        
+        }
+        .ssda1img{transform: translateX(0px);}
+        .ssda2img{transform: translateX(-400px)}
+        .ssda3img{transform: translateX(-800px)}
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="ssda">
+            <img src="imagenes/d1.jpg" alt="">
+            <img src="imagenes/d3.jpg" alt="">
+            <img src="imagenes/d4.jpg" alt="">
+        </div>
+    </div>
+    <script>
+        document.getElementsByClassName("contenedor")[0].onclick=function(){
+            document.getElementsByClassName("ssda")[0].classList.toggle("ssda3img");
+        };
+    </script>
+</body>
+</html>

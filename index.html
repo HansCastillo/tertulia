@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>INICIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="jquery.animate-colors-min.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div id="imagen1"><img src="imagenes/opera.png" alt=""></div>
+        <div class="menu">
+            <div class="item">NOSOTROS
+                <ul>
+                    <li><a href="">MISION</a></li>
+                    <li><a href="">VISION</a></li>
+                    <li><a href="">UBICACION</a></li>                    
+                </ul>            
+            </div>
+            <div class="item">SERVICIOS</div>
+            <div class="item">ESPECIALIDADES</div>
+            <div class="item">MEDICOS</div>
+        </div>
+        <div class="panel"><img src="imagenes/banner.jpg" alt=""></div>
+        <div class="menu2"></div>
+        <div class="menupanel">
+            <div class="item2">                
+                <div>Especialidades</div><br>
+                <div><img src="imagenes/descarga.png" alt="">Brindamos el mas variado servicio</div>
+            </div>
+            <div class="item2">
+                <div>Especialidades</div><br>
+                <div><img src="imagenes/descarga.png" alt="">Brindamos el mas variado servicio</div>
+            </div>
+            <div class="item2">
+                <div>Especialidades</div><br>
+                <div><img src="imagenes/descarga.png" alt="">Brindamos el mas variado servicio</div>
+            </div>
+            <div class="item2">
+                <div>Especialidades</div><br>
+                <div><img src="imagenes/descarga.png" alt="">Brindamos el mas variado servicio</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".item").hover(function(){            
+            $(".item>ul")[0].style.opacity="0";
+            
+        });
+    </script>
+</body>
+</html>
