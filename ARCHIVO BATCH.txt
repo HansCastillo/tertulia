@@ -1,0 +1,18 @@
+
+comandos	
+start ccleaner.exe 	
+@echo off		borrar linea(?)
+echo.			espacio de linea
+echo texto		mostrar texto			
+pause			"presionar tecla para continuar"
+pause>nul		presionar tecla para continuar	
+exit			finalizar
+cls			borrar pantalla
+set variable=valor	declarar variable
+set/p nombre=		ingresar valor(despues de "=" se puede mostrar texto)		
+set/a suma=%a1%+%a2%	ingresar valor numerico utilizando operador
+%variable%		referencia a una variable	
+
+condicionales
+if %variable==4% echo verdadero!!
+
